@@ -1,4 +1,1 @@
-# First-demo
-First Repository
-<br>
-This is a demo repository
+Performing analysis of the Kickstarter data
