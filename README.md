@@ -46,14 +46,15 @@ Performing analysis of the Kickstarter data
 
   ## Outcomes Based on Goals Chart
   For analyzing Outcomes based on goal, we are using “countif” function and “sum” function. Initially I created a new sheet and labelled it "Outcomes Based on Goals” in the Kickstarter sheet and then created the following columns,
-•	Goal
-•	Number Successful
-•	Number Failed
-•	Number Canceled
-•	Total Projects
-•	Percentage Successful
-•	Percentage Failed
-•	Percentage Canceled
+
+* Goal
+*	Number Successful
+*	Number Failed
+*	Number Canceled
+*	Total Projects
+*	Percentage Successful
+*	Percentage Failed
+*	Percentage Canceled
     In the goal column, I created 12 ranges of dollar-amounts, so that the projects can be grouped based on their goal amount. I used countif function to populate “Number Successful," "Number Failed," and "Number Canceled" from Kickstarter sheet. I also applied the filters on the Kickstarter "outcome" column, the "goal" amount column using the goal ranges created, and the "Subcategory" column with value “plays”. I then applied the sum function to calculate Total projects for each outcome. I also calculated the percentage successful, percentage failed, and percentage cancelled for each dollar range. I created a line chart to visually understand the trend and titled the chat as "Outcomes Based on Goal". The chart helps to visualize the relationship between the goal-amount ranges on the x-axis and the percentage of successful, failed and canceled projects on the y-axis.
 
  ![image](https://user-images.githubusercontent.com/72629108/153688021-c67f6d26-0ac8-4aeb-8063-1f57523e300c.png)
