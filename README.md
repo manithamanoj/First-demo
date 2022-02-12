@@ -30,21 +30,22 @@ Performing analysis of the Kickstarter data
 
 
 ## Analysis and Challenges
-   Outcomes Based on Launch Date Chart
+  Outcomes Based on Launch Date Chart
      
-     In the given data the launch dates and deadline are given in Unix time stamp. I changed that to human date and added two new columns “Date created conversion” and “Date ended conversion” From "Date Created Conversion". I extracted years from it and added new column “Years “ in the Kickstarter spreadsheet. I inserted a new pivot table in a new worksheet and renamed it as "Theater Outcomes by Launch Date”. I then dragged "Parent Category" and "Years" under the filters. The row label is populated with Date created conversion and that is the launch date. The column and values are populated with outcomes. I applied the filter to remove ‘live’ from the column labels. The "Parent Category" is filtered on "theater" and row label are sorted in ascending order. Next, I inserted a line chart to see the visual representation and gave the chart title as “Theater Outcomes based on Launch date”.
+ In the given data the launch dates and deadline are given in Unix time stamp. I changed that to human date and added two new columns “Date created conversion” and “Date ended conversion” From "Date Created Conversion". I extracted years from it and added new column “Years “ in the Kickstarter spreadsheet. I inserted a new pivot table in a new worksheet and renamed it as "Theater Outcomes by Launch Date”. I then dragged "Parent Category" and "Years" under the filters. The row label is populated with Date created conversion and that is the launch date. The column and values are populated with outcomes. I applied the filter to remove ‘live’ from the column labels. The "Parent Category" is filtered on "theater" and row label are sorted in ascending order. Next, I inserted a line chart to see the visual representation and gave the chart title as “Theater Outcomes based on Launch date”.
 
- 
+ ![image](https://user-images.githubusercontent.com/72629108/153688056-5e1c3ec8-24c9-460d-b71d-c479ae0c5baf.png)
+
 
  ##  Results from “Outcomes Based on Launch Date” Chart
    
-     From the pivot chart, we can see that the project with month May as the launch date has the most successful campaign rate followed by June. The month December has the lowest success rate.
+ From the pivot chart, we can see that the project with month May as the launch date has the most successful campaign rate followed by June. The month December has the lowest success rate.
 
 
 
 
   ## Outcomes Based on Goals Chart
-   For analyzing Outcomes based on goal, we are using “countif” function and “sum” function. Initially I created a new sheet and labelled it "Outcomes Based on Goals” in the Kickstarter sheet and then created the following columns,
+  For analyzing Outcomes based on goal, we are using “countif” function and “sum” function. Initially I created a new sheet and labelled it "Outcomes Based on Goals” in the Kickstarter sheet and then created the following columns,
 •	Goal
 •	Number Successful
 •	Number Failed
@@ -55,7 +56,8 @@ Performing analysis of the Kickstarter data
 •	Percentage Canceled
     In the goal column, I created 12 ranges of dollar-amounts, so that the projects can be grouped based on their goal amount. I used countif function to populate “Number Successful," "Number Failed," and "Number Canceled" from Kickstarter sheet. I also applied the filters on the Kickstarter "outcome" column, the "goal" amount column using the goal ranges created, and the "Subcategory" column with value “plays”. I then applied the sum function to calculate Total projects for each outcome. I also calculated the percentage successful, percentage failed, and percentage cancelled for each dollar range. I created a line chart to visually understand the trend and titled the chat as "Outcomes Based on Goal". The chart helps to visualize the relationship between the goal-amount ranges on the x-axis and the percentage of successful, failed and canceled projects on the y-axis.
 
- 
+ ![image](https://user-images.githubusercontent.com/72629108/153688021-c67f6d26-0ac8-4aeb-8063-1f57523e300c.png)
+
 
 ## Result from Outcomes Based on Goals Chart
 From the Chart, we can see that there is a higher chance of campaign failure, if the goal amount is high. For the goal amount given by Louise $12,000 the chart shows a success rate of 54.167%.
@@ -70,4 +72,3 @@ Also, we should have checked the impact of staff_pick on outcome. For this, we c
 
 I am also not sure about the reliability of the statistics, since we are using different currencies to calculate the descriptive statistics. (As we are filtering by country it doesn’t matter here). It is better if we convert goal amounts and pledged amount to same currency, if we need to compare across countries.
 
-![image](https://user-images.githubusercontent.com/72629108/153687594-fdff2b39-0887-48ad-aa33-dd421f4bbc59.png)
